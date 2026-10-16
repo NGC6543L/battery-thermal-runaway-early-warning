@@ -1,0 +1,28 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 数据与产物 (体积大, 不入库) ----
+# 原始实验数据请从公开数据集获取 (Mendeley, DOI: 10.17632/sn2kv34r4h.1)
+data/
+# 中间产物, 可用脚本重新生成
+interim/
+# 生成的数据集与模型结果
+dataset/
+results/
+figures/
+
+# ---- 模型文件 ----
+*.joblib
+*.pkl
+
+# ---- 系统 / 编辑器 ----
+~$*
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+
+# 说明: meta/ 体积很小 (<200KB) 且是人工/自动标注结果, 保留入库
